@@ -7,5 +7,5 @@ COPY ./docker-entrypoint.sh /
 VOLUME /data
 WORKDIR /data
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/docker-entrypoint.sh"]
 CMD ["--help"]
